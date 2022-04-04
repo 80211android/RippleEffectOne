@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rodolfonavalon.shaperipplelibrary.ShapeRipple
+        android:id="@+id/ripple"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        custom:ripple_stroke_width="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/customizer_container_padding"
+        android:paddingLeft="@dimen/customizer_container_padding"
+        android:paddingRight="@dimen/customizer_container_padding"
+        android:paddingStart="@dimen/customizer_container_padding">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/enable_single_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:text="Single ripple" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/enable_stroke_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:text="Stroke Ripple" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/enable_color_transition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:text="Color transition" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
